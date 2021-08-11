@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root {
+    /** Primary Colours **/
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    /** Secondary Colours**/
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+    --active-purple: rgb(118, 108, 241);
+}
+
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    color: var(--desaturated-blue); 
+    background-color: var(--pale-blue);
+}
+
+h1 {
+    font-weight: 900;
+    font-size: x-large;
+    color: var(--dark-blue);
+}
+
+p {
+    font-weight: 500;
+}
+
+p, h1 {
+    text-align: center;
+}
+
+a {
+    color: var(--bright-blue);
+}
+
+a:hover {
+    text-decoration: none;
+    color: var(--active-purple);
+}
+
+
+
+/** For Mobile**/
+@media (max-width: 400px){
+    .container {
+        display: flex;
+        flex-direction: column;
+        margin: 1rem;
+        margin-top: 5rem;               
+    }   
+
+    body {           
+        background-image: url("/images/pattern-background-mobile.svg");
+        background-position: top;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: contain;
+        background-color: var(--pale-blue);
+    }
+
+    .plan-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;        
+    }
+    
+}
+
+
+
+@media (min-width: 401px){
+    body { 
+        background-image: url("/images/pattern-background-desktop.svg");
+        background-position: top;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: contain;        
+    }
+
+    .plan-container {
+        display: grid;
+        grid-template-columns: 60px 160px 70px;       
+        align-items: center;
+        grid-column-gap: 20px;
+        box-sizing: border-box;        
+    }
+
+    .logo {
+         padding-left: 1rem;
+    }
+
+    .details-container {
+        justify-content: flex-start;
+    }
+
+    .button--blue:hover {
+        background-color: var(--active-purple);
+    }
+
+    .button--white:hover {
+        color: var(--dark-blue);
+    }
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5rem;
+    max-width: 400px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+
+.header-container__logo {
+    max-width: 100%;
+    height: auto;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.order-container {
+    padding: .75rem;
+}
+
+.summary {
+    padding: 0 1rem;
+}
+
+
+
+
+.details-container {
+    display: grid;
+    grid-template-rows: 1.5rem;
+}   
+
+.details--pale-blue {
+    color: var(--dark-blue);
+    font-weight: 700;
+}
+
+.plan-container--style {
+    margin: 1rem 1rem;
+    border: 1px solid var(--very-pale-blue);
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    background-color: var(--very-pale-blue);
+}
+.button {
+    display: flex;
+    flex-direction: column;
+    padding: .75rem 0;     
+    margin: 0 1rem;   
+}
+
+button:hover {
+    cursor: pointer;    
+}
+
+.button__style {
+    padding: 1.1rem 0;
+    border: none;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    font-weight: 700;
+}
+
+.button--blue {
+    background-color: var(--bright-blue);
+    color: var(--very-pale-blue);
+    box-shadow: 0px 5px 15px 6px rgb(205, 201, 243);
+}
+
+.button--blue:active {
+    background-color: var(--active-purple);
+}
+
+
+.button--white {
+    background-color: white;
+    color: var(--desaturated-blue);
+}
+
+.button--white:active {
+    background-color: var(--very-pale-blue);
+    color: var(--dark-blue);
+}
+
+.attribution {
+    margin-top: 2rem;
+    text-align: center;
+}
