@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: https://github.com/ichiklaus/fementor-order-summary
-- Live Site URL: https://ichiklaus.github.io/fementor-order-summary/
+- Solution URL: https://github.com/ichiklaus/fem-order-summary
+- Live Site URL: https://ichiklaus.github.io/fem-order-summary/
 
 ## My process
 
